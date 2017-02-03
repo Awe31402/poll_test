@@ -1,0 +1,5 @@
+config DEVONE
+    tristate "Devone Device"
+    default n
+    help
+    This is Devone dev experimental module
