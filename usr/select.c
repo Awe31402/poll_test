@@ -39,7 +39,7 @@ int main(void)
 
         if (retval)
             break;
-    } while (retval = 0);
+    } while (retval == 0);
 
     if (FD_ISSET(fd, &rfds)) {
         printf("reading...\n");
