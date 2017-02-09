@@ -244,7 +244,7 @@ static __exit void devone_exit(void)
 
     cdev_del(&devone_cdev);
     unregister_chrdev_region(dev, devone_devs);
-    proc_remove_entry("waiting_proc", NULL);
+    remove_proc_entry("waiting_proc", NULL);
     printk(KERN_INFO "devone removed\n");
 }
 
